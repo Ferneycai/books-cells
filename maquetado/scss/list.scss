@@ -1,0 +1,59 @@
+.body-list {
+  height: 100vh;
+  width: 100vw;
+}
+
+.list-wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .list-cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 936px;
+    width: 100%;
+  }
+  
+  .list-card {
+    background: $white;
+    box-shadow: 4px 4px 10px 0 rgba($black, 0.5);
+    display: flex;
+    flex-flow: column;
+    margin: 16px;
+    max-height: 300px;
+    max-width: 198px;
+    padding: 28px 28px 24px;
+    transition: transform 0.2s;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .list-cover {
+    margin-bottom: 12px;
+    overflow: hidden;
+  
+    &-image {
+      max-width: inherit;
+      width: 100%;
+    }
+  }
+  
+  .list-author {
+    color: $gray;
+    font-size: 14px;
+  }
+  
+  .list-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
